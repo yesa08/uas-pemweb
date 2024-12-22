@@ -1,6 +1,12 @@
 # Ujian Akhir Semester - Yesa Viola (122140133) #
 ## Screenshot Web
-
+![halaman login](/Screenshot/login.png)
+![halaman login gagal](/Screenshot/login-gagal.png)
+![validasi server gagal](/Screenshot/validasi-server-gagal.png)
+![index](/Screenshot/index.png)
+![tambah mata kuliah](/Screenshot/tambah-mata-kuliah.png)
+![tambah mata kuliah gagal](/Screenshot/tambah-mata-kuliah-fail.png)
+![index setelah hapus](/Screenshot/index-setelah-hapus.png)
 ## Bagian 1: Client-side Programming ##
 ### 1.1 Manipulasi DOM dengan JavaScript ###
 Web ini melakukan manipulasi DOM dengan mengubah warna border saat event `onfocus` dan `onblur`, serta menambahkan konten berupa tulisan error saat event `onsubmit`.
