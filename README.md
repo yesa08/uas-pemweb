@@ -29,3 +29,14 @@ Manipulasi data pada database yang ada pada web ini merupakan operasi CRUD pada 
 Pada web ini, session digunakan untuk memantau apakah proses sebelumnya berhasil atau gagal. Hal ini dapat dilihat pada `login.php` ketika login gagal, dan pada `index.php` ketika berhasil menghapus data.
 ## 4.2 Pengelolaan State dengan Cookie dan Browser Storage
 Pada web ini, pengelolaan cookie dapat dilihat pada penggunaan setcookie di `login.php` ketika pengguna berhasil login melalui fungsi yang seolah-olah melakukan login. Untuk getcookie, dapat dilihat pada `index.php`, `create.php`, dan `update.php` saat melakukan pengecekan login dari cookie, serta penghapusan cookie saat logout yang dilakukan di `index.php`.
+# Bagian Bonus: Hosting Aplikasi Web #
+## Apa langkah-langkah yang Anda lakukan untuk meng-host aplikasi web Anda?
+Pertama, saya membuat akun hosting gratis di `infinityfree.com` dengan domain `https://uas-pemweb-133.infinityfreeapp.com.` Setelah itu, saya membuka cPanel yang disediakan oleh infinityfree untuk mengunggah file PHP aplikasi saya. Selanjutnya, saya membuat database melalui cPanel dan melakukan impor tabel yang diperlukan ke dalam database tersebut. Kemudian, saya mengubah kode koneksi database pada aplikasi agar sesuai dengan konfigurasi SQL dari domain yang saya gunakan. Langkah terakhir adalah mendaftarkan sertifikat SSL untuk memastikan koneksi aplikasi web aman.
+## Pilih penyedia hosting web yang menurut Anda paling cocok untuk aplikasi web Anda.
+Saya memilih InfinityFree sebagai penyedia hosting karena menyediakan layanan hosting gratis dengan fitur-fitur dasar yang mencukupi kebutuhan aplikasi web saya, seperti dukungan PHP, MySQL, serta SSL gratis.
+## Bagaimana Anda memastikan keamanan aplikasi web yang Anda host?
+Saat ini, saya telah mengganti username dan password database default dengan yang lebih aman, menghapus semua file yang tidak diperlukan, serta mendaftarkan dan mengaktifkan SSL untuk mendukung koneksi HTTPS dan mengenkripsi data yang ditransmisikan.
+## Jelaskan konfigurasi server yang Anda terapkan untuk mendukung aplikasi web Anda. ##
+Saat ini, konfigurasi server yang telah saya terapkan untuk mendukung aplikasi web saya meliputi pendaftaran dan aktivasi SSL guna mendukung koneksi HTTPS dan mengenkripsi data yang ditransmisikan, sehingga meningkatkan keamanan.
+
+
