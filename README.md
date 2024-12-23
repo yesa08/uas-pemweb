@@ -16,7 +16,7 @@ Web ini memiliki tiga event handling, yaitu `onfocus`, `onblur`, dan `onsubmit`,
 ### 2.1 Pengelolaan Data dengan PHP ###
 Web ini mengimplementasikan pengelolaan data dengan menggunakan metode `POST` dan `GET` untuk melakukan parsing variabel global, validasi sisi server, serta menyimpan data ke database, termasuk informasi browser dan IP pengguna yang dapat dilihat pada `login.php`, `create.php`, dan `update.php`.
 ### 2.2 Objek PHP Berbasis OOP
-Web ini mengimplementasikan PHP berbasis OOP, yang dapat dilihat pada file-file seperti `Koneksi.php`, `MatkulController.php`, `SessionCookieController.php`, `LoginForm.js`, `CreateForm.js`, dan `UpdateForm.js`.
+Web ini mengimplementasikan PHP berbasis OOP, yang dapat dilihat pada file-file seperti `Koneksi.php`, `MatkulController.php`, dan `SessionCookieController.php`.
 # Bagian 3: Database Management #
 ## 3.1 Pembuatan Tabel Database ##
 Web ini memiliki tabel database `matkul` dengan kolom `id`, `nama`, `waktu`, `dosen`, `ruang`, `browser`, dan `ip`, yang dapat dilihat pada file `db.sql`.
@@ -31,6 +31,7 @@ Pada web ini, session digunakan untuk memantau apakah proses sebelumnya berhasil
 Pada web ini, pengelolaan cookie dapat dilihat pada penggunaan setcookie di `login.php` ketika pengguna berhasil login melalui fungsi yang seolah-olah melakukan login. Untuk getcookie, dapat dilihat pada `index.php`, `create.php`, dan `update.php` saat melakukan pengecekan login dari cookie, serta penghapusan cookie saat logout yang dilakukan di `index.php`.
 # Bagian Bonus: Hosting Aplikasi Web #
 Lihat web yang sudah dihosting disini : [Link Hosting Website](https://uas-pemweb-133.infinityfreeapp.com/)
+catatan : web ini mungkin terdeteksi sebagai web berbahaya pada browser chrome dikarenakan pembuatannya yang masih menggunakan php native atau berbagai hal lainnya, namun dapat berjalan lancar di browser lain.
 ## Apa langkah-langkah yang Anda lakukan untuk meng-host aplikasi web Anda?
 Pertama, saya membuat akun hosting gratis di `infinityfree.com` dengan domain `https://uas-pemweb-133.infinityfreeapp.com` Setelah itu, saya membuka cPanel yang disediakan oleh infinityfree untuk mengunggah file PHP aplikasi saya. Selanjutnya, saya membuat database melalui cPanel dan melakukan impor tabel yang diperlukan ke dalam database tersebut. Kemudian, saya mengubah kode koneksi database pada aplikasi agar sesuai dengan konfigurasi SQL dari domain yang saya gunakan. Langkah terakhir adalah mendaftarkan sertifikat SSL untuk memastikan koneksi aplikasi web aman.
 ## Pilih penyedia hosting web yang menurut Anda paling cocok untuk aplikasi web Anda.
