@@ -21,7 +21,7 @@ Web ini mengimplementasikan PHP berbasis OOP, yang dapat dilihat pada file-file 
 ## 3.1 Pembuatan Tabel Database ##
 Web ini memiliki tabel database `matkul` dengan kolom `id`, `nama`, `waktu`, `dosen`, `ruang`, `browser`, dan `ip`, yang dapat dilihat pada file `db.sql`.
 ## 3.2 Konfigurasi Koneksi Database ##
-Konfigurasi koneksi database web ini dapat dilihat di Koneksi.php
+Konfigurasi koneksi database web ini dapat dilihat di `Koneksi.php`
 ## 3.3 Manipulasi Data pada Database ##
 Manipulasi data pada database yang ada pada web ini merupakan operasi CRUD pada tabel `matkul`, yang dapat dilihat pada `MatkulController`
 # Bagian 4: State Management #
@@ -30,7 +30,8 @@ Pada web ini, session digunakan untuk memantau apakah proses sebelumnya berhasil
 ## 4.2 Pengelolaan State dengan Cookie dan Browser Storage
 Pada web ini, pengelolaan cookie dapat dilihat pada penggunaan setcookie di `login.php` ketika pengguna berhasil login melalui fungsi yang seolah-olah melakukan login. Untuk getcookie, dapat dilihat pada `index.php`, `create.php`, dan `update.php` saat melakukan pengecekan login dari cookie, serta penghapusan cookie saat logout yang dilakukan di `index.php`.
 # Bagian Bonus: Hosting Aplikasi Web #
-Lihat web yang sudah dihosting disini : [Link Hosting Website](https://uas-pemweb-133.infinityfreeapp.com/) \\
+Lihat web yang sudah dihosting disini : [Link Hosting Website](https://uas-pemweb-133.infinityfreeapp.com/)\
+\
 Catatan : web ini mungkin terdeteksi sebagai web berbahaya pada browser chrome dikarenakan pembuatannya yang masih menggunakan php native atau berbagai hal lainnya, namun dapat berjalan lancar di browser lain.
 ## Apa langkah-langkah yang Anda lakukan untuk meng-host aplikasi web Anda?
 Pertama, saya membuat akun hosting gratis di `infinityfree.com` dengan domain `https://uas-pemweb-133.infinityfreeapp.com` Setelah itu, saya membuka cPanel yang disediakan oleh infinityfree untuk mengunggah file PHP aplikasi saya. Selanjutnya, saya membuat database melalui cPanel dan melakukan impor tabel yang diperlukan ke dalam database tersebut. Kemudian, saya mengubah kode koneksi database pada aplikasi agar sesuai dengan konfigurasi SQL dari domain yang saya gunakan. Langkah terakhir adalah mendaftarkan sertifikat SSL untuk memastikan koneksi aplikasi web aman.
